@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src ="javascript/index.js"></script>
+  </head>
+  <body>
+  <div id = "room-box">
+   <p id = "num_users"></p>
+    <h3> Users Online:</h3>
+    <ul id = "online-list"></ul>
+    <p class="name">Your nickname is :Anonymous </p>
+    <input id="nick" autocomplete = "off" placeholder = "Enter a nickname"/><button id = "nick_btn">Submit</button>
+  <ul id = "info"></ul>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+  </div>
+  </body>
+</html>
